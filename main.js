@@ -15,7 +15,15 @@ function roda_teto(){
       var has_account = prompt("Você já possui uma conta? [S/N] ").toUpperCase();
     console.clear();
     
-   
+    if (has_account === "S"){
+      // Caso o usuário já tenha a conta, vamos prosseguir com a auth
+      console.log("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨\n");
+      console.log("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨FAÇA LOGIN¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨\n");
+      var login = prompt("Digite seu usuário: ");
+      var password = prompt("Digite sua senha: ")
+      console.log("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨\n")
+      console.log("¨¨¨¨¨¨DISPONIVEL PARA NAVEGAÇÃO NO SITE!¨¨¨¨¨¨¨¨¨¨¨¨\n")
+      
       // Se o processo de autenticação ocorrer tudo bem, saimos da func
       return 1;
     }else if(has_account === "N"){
